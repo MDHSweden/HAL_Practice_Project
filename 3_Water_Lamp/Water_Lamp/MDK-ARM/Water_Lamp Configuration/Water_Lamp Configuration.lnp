@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+"water_lamp configuration\system_stm32f1xx.o"
+"water_lamp configuration\startup_stm32f103xe.o"
+"water_lamp configuration\stm32f1xx_it.o"
+"water_lamp configuration\main.o"
+"water_lamp configuration\stm32f1xx_hal_msp.o"
+"water_lamp configuration\stm32f1xx_hal_rcc.o"
+"water_lamp configuration\stm32f1xx_hal_cortex.o"
+"water_lamp configuration\stm32f1xx_hal_dma.o"
+"water_lamp configuration\stm32f1xx_hal_gpio_ex.o"
+"water_lamp configuration\stm32f1xx_hal_flash_ex.o"
+"water_lamp configuration\stm32f1xx_hal_gpio.o"
+"water_lamp configuration\stm32f1xx_hal_flash.o"
+"water_lamp configuration\stm32f1xx_hal.o"
+"water_lamp configuration\stm32f1xx_hal_rcc_ex.o"
+"water_lamp configuration\stm32f1xx_hal_pwr.o"
+--library_type=microlib --strict --scatter "Water_Lamp Configuration\Water_Lamp Configuration.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Water_Lamp Configuration.map" -o "Water_Lamp Configuration\Water_Lamp Configuration.axf"

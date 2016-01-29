@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+"interrupt_key configuration\startup_stm32f103xe.o"
+"interrupt_key configuration\stm32f1xx_hal_cortex.o"
+"interrupt_key configuration\stm32f1xx_hal_gpio_ex.o"
+"interrupt_key configuration\stm32f1xx_hal_rcc_ex.o"
+"interrupt_key configuration\stm32f1xx_hal.o"
+"interrupt_key configuration\stm32f1xx_hal_pwr.o"
+"interrupt_key configuration\stm32f1xx_hal_dma.o"
+"interrupt_key configuration\stm32f1xx_hal_gpio.o"
+"interrupt_key configuration\stm32f1xx_hal_flash.o"
+"interrupt_key configuration\stm32f1xx_hal_flash_ex.o"
+"interrupt_key configuration\stm32f1xx_hal_rcc.o"
+"interrupt_key configuration\system_stm32f1xx.o"
+"interrupt_key configuration\main.o"
+"interrupt_key configuration\stm32f1xx_it.o"
+"interrupt_key configuration\stm32f1xx_hal_msp.o"
+--library_type=microlib --strict --scatter "Interrupt_Key Configuration\Interrupt_Key Configuration.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Interrupt_Key Configuration.map" -o "Interrupt_Key Configuration\Interrupt_Key Configuration.axf"

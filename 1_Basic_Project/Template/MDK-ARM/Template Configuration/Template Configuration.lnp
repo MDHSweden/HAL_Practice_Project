@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+"template configuration\system_stm32f1xx.o"
+"template configuration\stm32f1xx_hal_msp.o"
+"template configuration\main.o"
+"template configuration\stm32f1xx_it.o"
+"template configuration\stm32f1xx_hal_rcc_ex.o"
+"template configuration\stm32f1xx_hal_flash.o"
+"template configuration\stm32f1xx_hal_pwr.o"
+"template configuration\stm32f1xx_hal_flash_ex.o"
+"template configuration\stm32f1xx_hal_gpio_ex.o"
+"template configuration\stm32f1xx_hal_gpio.o"
+"template configuration\stm32f1xx_hal_dma.o"
+"template configuration\stm32f1xx_hal_rcc.o"
+"template configuration\stm32f1xx_hal.o"
+"template configuration\stm32f1xx_hal_cortex.o"
+"template configuration\startup_stm32f103xe.o"
+--library_type=microlib --strict --scatter "Template Configuration\Template Configuration.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Template Configuration.map" -o "Template Configuration\Template Configuration.axf"

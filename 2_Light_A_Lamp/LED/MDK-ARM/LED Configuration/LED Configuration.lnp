@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+"led configuration\stm32f1xx_it.o"
+"led configuration\main.o"
+"led configuration\stm32f1xx_hal_msp.o"
+"led configuration\startup_stm32f103xe.o"
+"led configuration\system_stm32f1xx.o"
+"led configuration\stm32f1xx_hal_gpio.o"
+"led configuration\stm32f1xx_hal.o"
+"led configuration\stm32f1xx_hal_flash.o"
+"led configuration\stm32f1xx_hal_cortex.o"
+"led configuration\stm32f1xx_hal_flash_ex.o"
+"led configuration\stm32f1xx_hal_dma.o"
+"led configuration\stm32f1xx_hal_gpio_ex.o"
+"led configuration\stm32f1xx_hal_rcc_ex.o"
+"led configuration\stm32f1xx_hal_pwr.o"
+"led configuration\stm32f1xx_hal_rcc.o"
+--library_type=microlib --strict --scatter "LED Configuration\LED Configuration.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LED Configuration.map" -o "LED Configuration\LED Configuration.axf"

@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"polling configuration\stm32f1xx_hal_gpio_ex.o"
+"polling configuration\stm32f1xx_hal_uart.o"
+"polling configuration\stm32f1xx_hal_pwr.o"
+"polling configuration\stm32f1xx_hal_cortex.o"
+"polling configuration\stm32f1xx_hal_flash.o"
+"polling configuration\stm32f1xx_hal_gpio.o"
+"polling configuration\stm32f1xx_hal_rcc.o"
+"polling configuration\stm32f1xx_hal_dma.o"
+"polling configuration\stm32f1xx_hal_rcc_ex.o"
+"polling configuration\stm32f1xx_hal.o"
+"polling configuration\stm32f1xx_hal_flash_ex.o"
+"polling configuration\stm32f1xx_it.o"
+"polling configuration\main.o"
+"polling configuration\stm32f1xx_hal_msp.o"
+"polling configuration\startup_stm32f103xe.o"
+"polling configuration\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Polling Configuration\Polling Configuration.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Polling Configuration.map" -o "Polling Configuration\Polling Configuration.axf"
