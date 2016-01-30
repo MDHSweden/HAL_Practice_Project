@@ -81,7 +81,7 @@ int main(void)
   MX_USART1_UART_Init();
 
   /* USER CODE BEGIN 2 */
-  HAL_UART_Transmit (&huart1, Hello_World, sizeof(Hello_World), 0xffffffff);
+  HAL_UART_Transmit (&huart1, Hello_World, sizeof(Hello_World), HAL_MAX_DELAY);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -91,9 +91,9 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-		HAL_UART_Receive (&huart1, RxBuff, 1, 0xffffffff);
+		HAL_UART_Receive (&huart1, RxBuff, 1, HAL_MAX_DELAY);
 		TxBuff[0] = RxBuff[0];
-		HAL_UART_Transmit (&huart1, TxBuff, 1, 0xffffffff);
+		HAL_UART_Transmit (&huart1, TxBuff, 1, HAL_MAX_DELAY);
   }
   /* USER CODE END 3 */
 
